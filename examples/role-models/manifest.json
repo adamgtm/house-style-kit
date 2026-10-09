@@ -1,0 +1,67 @@
+{
+  "title": "House style gallery",
+  "intro": "An example of the format: three published graphics by Adam Schoenfeld for Adam's GTM Report. Swap in your own work.",
+  "brand": {
+    "name": "Adam's GTM Report (example)",
+    "url": "adamGTM.com"
+  },
+  "updated": "2026-10-07",
+  "surfaces": [
+    {
+      "id": "explainer",
+      "group": "Social graphics",
+      "name": "Explainers and flow charts"
+    },
+    {
+      "id": "table",
+      "group": "Social graphics",
+      "name": "Data tables"
+    },
+    {
+      "id": "concept",
+      "group": "Charts",
+      "name": "Concept charts"
+    },
+    {
+      "id": "deck",
+      "group": "Slides",
+      "name": "Slide decks",
+      "gap": "Add the first deck that sets the bar."
+    }
+  ],
+  "items": [
+    {
+      "id": "data-collection-flow",
+      "surface": "explainer",
+      "title": "Post-event data collection strategy",
+      "file": "data-collection-flow.png",
+      "date": "2026-09-24",
+      "status": "approved",
+      "where": "Newsletter: My post-conference playbook",
+      "words": "more visual flare, creative soul, and Adam-y-ness",
+      "why": "One idea per graphic. The whole collection flow runs top to bottom, with each tool's real logo."
+    },
+    {
+      "id": "acquisitions-table",
+      "surface": "table",
+      "title": "Recent GTM tech acquisitions",
+      "file": "acquisitions-table.png",
+      "date": "2026-09-27",
+      "status": "approved",
+      "where": "LinkedIn",
+      "why": "Real logos and real numbers. One highlight color and one legend line replace footnotes."
+    },
+    {
+      "id": "buyer-waves",
+      "surface": "concept",
+      "title": "3 AI waves changing how buyers buy",
+      "file": "buyer-waves.png",
+      "dark": "buyer-waves-dark.png",
+      "date": "2026-10-07",
+      "status": "approved",
+      "where": "LinkedIn",
+      "words": "Yes looks good. Like the new H1.",
+      "why": "The drawing does the explaining. Three curves share one baseline, each labeled at its arrowhead, with almost no other text."
+    }
+  ]
+}

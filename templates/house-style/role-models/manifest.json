@@ -1,0 +1,40 @@
+{
+  "title": "House style gallery",
+  "brand": {
+    "name": "Your name or brand",
+    "url": "yourdomain.com"
+  },
+  "surfaces": [
+    {
+      "id": "social",
+      "group": "Graphics",
+      "name": "Social graphics",
+      "gap": "Add the first post graphic you'd happily publish again."
+    },
+    {
+      "id": "charts",
+      "group": "Graphics",
+      "name": "Charts",
+      "gap": "Add a chart that made one number obvious."
+    },
+    {
+      "id": "slides",
+      "group": "Slides",
+      "name": "Slides",
+      "gap": "Add a slide you'd reuse as a template."
+    },
+    {
+      "id": "web",
+      "group": "Web",
+      "name": "Web pages",
+      "gap": "Add a page, or a section of one, you'd copy for the next build."
+    },
+    {
+      "id": "email",
+      "group": "Email",
+      "name": "Email",
+      "gap": "Add an email you were proud to send."
+    }
+  ],
+  "items": []
+}
