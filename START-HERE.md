@@ -21,8 +21,8 @@ When you finish, their project has:
 ## Step 0: set up
 
 1. Confirm you can read and write files in this folder. If you can't (for example, a chat window without local file access), say so plainly: this needs Claude Code or Codex working locally.
-2. Copy `house-style-kit/templates/house-style/` to `./house-style/` (skip any file that already exists), copy `house-style-kit/scripts/build_gallery.py` to `./house-style/build_gallery.py`, and copy `house-style-kit/prompts/` to `./house-style/prompts/` so the maintenance prompts survive if they delete the kit.
-3. Check `python3 --version` works. The gallery page needs nothing else. If they later want a post graphic of the gallery, that needs Pillow (`pip install pillow`).
+2. Copy `house-style-kit/templates/house-style/` to `./house-style/` (skip any file that already exists), copy `house-style-kit/scripts/build_gallery.py` and `house-style-kit/scripts/check_page.py` into `./house-style/`, and copy `house-style-kit/prompts/` to `./house-style/prompts/` so the prompts survive if they delete the kit.
+3. Check `python3 --version` works. The gallery page needs nothing else. Two extras are optional, so offer them and don't require them: a post graphic of the gallery needs Pillow (`pip install pillow`), and the phone check (`check_page.py`) needs Playwright (`pip install playwright`, then `python3 -m playwright install chromium`).
 4. Optional: show them the example gallery so they see where this is going: `python3 house-style/build_gallery.py --manifest house-style-kit/examples/role-models/manifest.json --open`. Say plainly that the examples are Adam's, to show the format, not a style to copy.
 
 ## Step 1: interview (one question at a time)
@@ -93,7 +93,7 @@ Show them the lines in `house-style-kit/templates/router.md`. Ask before adding 
 
 ## Step 7: a test drive (offer it)
 
-Offer to make one small thing "in the house style" right now: a quote card, a title slide or a simple chart, as a self-contained HTML file. If Google Chrome is installed, render a PNG with headless Chrome; otherwise open the HTML and let them screenshot it. Look at it yourself at phone width first. When they react, save the lesson. This is the loop they'll use from now on.
+Offer to make one small thing "in the house style" right now: a quote card, a title slide or a simple chart, as a self-contained HTML file. If Google Chrome is installed, render a PNG with headless Chrome; otherwise open the HTML and let them screenshot it. Look at it yourself at the size people will see it first. If it's a web page and Playwright is installed, run `python3 house-style/check_page.py <file>` and fix what it reports. When they react, save the lesson. This is the loop they'll use from now on.
 
 ## Step 8: wrap up
 
@@ -103,4 +103,5 @@ Tell them, briefly:
 - When they edit what you made, the lesson gets saved in their words. When a lesson keeps coming back, it becomes a rule in the index.
 - When they love something, say "make this a role model."
 - Once a month, paste `house-style/prompts/contradiction-audit.md` to catch rules that drifted apart.
-- `house-style/` is self-contained, prompts included. They can delete `house-style-kit/` whenever they like.
+- Later, when they need them, more prompts wait in `house-style/prompts/`: write a standard when one kind of work keeps showing up in the lessons, make a builder for something they make every week, run a batch when they need many at once, and redesign in rounds.
+- `house-style/` is self-contained, prompts and scripts included. They can delete `house-style-kit/` whenever they like.

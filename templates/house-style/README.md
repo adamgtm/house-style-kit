@@ -5,8 +5,8 @@
 When I ask for anything "in the house style":
 
 1. Read this page.
-2. Look at the role model for the kind of work you're making (`role-models/`, or open `role-models/index.html`).
-3. Build it, then look at it at the size people will see it before showing me.
+2. Look at the role model for the kind of work you're making (`role-models/`, or open `role-models/index.html`). If that kind of work has a standard in `standards/`, follow it.
+3. Build it, then check it at the size people will see it before showing me. For a web page, run `python3 house-style/check_page.py <file>` if Playwright is installed, and fix what it reports.
 4. When I edit it, save the lesson to `lessons.md` in my words.
 
 ## What good looks like
@@ -43,9 +43,11 @@ When I ask for anything "in the house style":
 
 ## Kinds of work
 
-| Kind of work | Copy this role model | Specific rules |
-|---|---|---|
-| | | |
+<!-- When one kind of work keeps showing up in lessons.md, give it a standard: paste prompts/write-a-standard.md. -->
+
+| Kind of work | Copy this role model | Standard | Specific rules |
+|---|---|---|---|
+| | | <!-- e.g. standards/linkedin-graphics.md, or none yet --> | |
 
 See all of them: `python3 house-style/build_gallery.py --open`.
 
