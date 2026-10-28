@@ -50,7 +50,7 @@ It listens on 127.0.0.1 only. Add `--wait` to exit after the first send. Use it 
 
 Without `--open`, nothing launches. Different `review.json` files in one folder get different output folders. Rebuilding over another board's folder needs `--force`.
 
-The scripts use the standard library plus Pillow.
+The scripts use the standard library plus Pillow, which makes the thumbnails (`pip install pillow`).
 
 ## Keys
 

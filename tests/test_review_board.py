@@ -563,3 +563,11 @@ def test_idle_focused_tab_does_not_overwrite_other_tabs_note(tmp_path):
         assert a.locator("textarea.note").first.input_value() == "A edit"
         assert a.locator("textarea.note").nth(1).input_value() == "other item"
         br.close()
+
+
+def test_missing_pillow_says_how_to_install(tmp_path, monkeypatch, capsys):
+    rj = write_review(tmp_path)
+    monkeypatch.setitem(sys.modules, "PIL", None)
+    assert brb.main([str(rj)]) == 2
+    assert "pip install pillow" in capsys.readouterr().err
+    assert not (tmp_path / "review-board-review").exists()

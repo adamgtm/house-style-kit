@@ -248,6 +248,11 @@ def main(argv=None):
     ap.add_argument("--open", action="store_true", dest="open_browser", help="open the board in the browser")
     a = ap.parse_args(argv)
     try:
+        import PIL  # noqa: F401  (thumbnails)
+    except ImportError:
+        print("The review board needs Pillow to make thumbnails. Install it with: python3 -m pip install pillow", file=sys.stderr)
+        return 2
+    try:
         out, meta, n_items, n_versions = build(a.review_json, a.out, a.force)
     except BoardError as e:
         print("Cannot build the board:", file=sys.stderr)

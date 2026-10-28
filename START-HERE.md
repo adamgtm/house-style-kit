@@ -22,7 +22,7 @@ When you finish, their project has:
 
 1. Confirm you can read and write files in this folder. If you can't (for example, a chat window without local file access), say so plainly: this needs Claude Code or Codex working locally.
 2. Copy `house-style-kit/templates/house-style/` to `./house-style/` (skip any file that already exists), copy `house-style-kit/scripts/build_gallery.py` and `house-style-kit/scripts/check_page.py` into `./house-style/`, copy `house-style-kit/review-board/` to `./house-style/review-board/`, and copy `house-style-kit/prompts/` to `./house-style/prompts/` so the prompts survive if they delete the kit.
-3. Check `python3 --version` works. The gallery page needs nothing else. Two extras are optional, so offer them and don't require them: a post graphic of the gallery needs Pillow (`pip install pillow`), and the phone check (`check_page.py`) needs Playwright (`pip install playwright`, then `python3 -m playwright install chromium`).
+3. Check `python3 --version` works. The gallery page needs nothing else. Two extras are optional, so offer them and don't require them: the review board and a post graphic of the gallery need Pillow (`pip install pillow`), and the phone check (`check_page.py`) needs Playwright (`pip install playwright`, then `python3 -m playwright install chromium`).
 4. Optional: show them the example gallery so they see where this is going: `python3 house-style/build_gallery.py --manifest house-style-kit/examples/role-models/manifest.json --open`. Say plainly that the examples are Adam's, to show the format, not a style to copy.
 
 ## Step 1: interview (one question at a time)
