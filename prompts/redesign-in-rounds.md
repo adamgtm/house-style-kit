@@ -9,9 +9,9 @@ Round one:
 1. Study 3 to 5 role models for this kind of thing: my own best work and outside pieces I admire. Look at each one at the sizes people see it, on a phone and on a laptop, and write down in one line what to copy from each.
 2. Look at my current version the same way and list what's wrong with it, worst first.
 3. Mock the new version in HTML at real sizes, as close to buildable as you can. Where there's a real choice, mock two or three options side by side instead of picking for me, and say which you'd pick and why.
-4. Put it all on one review page: the role models, my current version, the mock, and the decisions that are mine, numbered.
+4. Put it all on a review board (house-style/review-board/README.md): one stack per decision, the role models and my current version for reference, and each option as a version I can like and comment on. Run it as a background job and tell me where it opened.
 
-After I answer, save every pick to house-style/lessons.md in my words. Run another round for anything still open. Build only what I've approved, then check it at phone, tablet and laptop widths (for a web page, run house-style/check_page.py if Playwright is installed) and show me the result.
+When I click Send, read my notes, save every pick to house-style/lessons.md in my words, and apply each note as a targeted edit. Run another round for anything still open. Build only what I've approved, then check it at phone, tablet and laptop widths (for a web page, run house-style/check_page.py if Playwright is installed) and show me the result.
 ```
 
 Every pick you make in a round becomes a lesson, so the next redesign starts with them.

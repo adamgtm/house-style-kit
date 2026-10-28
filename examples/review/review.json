@@ -1,0 +1,18 @@
+{"id": "demo-board", "title": "Demo review board",
+ "instruction": "Pick the versions you like. Leave a note on each. Click Send feedback when you're done.",
+ "sections": [
+  {"name": "Look", "items": [
+   {"id": "buyer-waves", "title": "Buyer waves chart",
+    "versions": [
+     {"id": "buyer-waves-light", "label": "A", "src": "../role-models/buyer-waves.png", "note": "Light ground."},
+     {"id": "buyer-waves-dark", "label": "B", "src": "../role-models/buyer-waves-dark.png", "note": "Dark ground."}]}]},
+  {"name": "Format", "items": [
+   {"id": "opening-graphic", "title": "Opening graphic for a post",
+    "versions": [
+     {"id": "opening-flow", "label": "A", "src": "../role-models/data-collection-flow.png", "note": "A flow chart."},
+     {"id": "opening-table", "label": "B", "src": "../role-models/acquisitions-table.png", "note": "A data table."},
+     {"id": "opening-chart", "label": "C", "src": "../role-models/buyer-waves.png", "note": "A chart."}]},
+   {"id": "closing-graphic", "title": "Closing graphic",
+    "versions": [
+     {"id": "closing-flow", "label": "A", "src": "../role-models/data-collection-flow.png", "note": "The flow chart again."},
+     {"id": "closing-dark", "label": "B", "src": "../role-models/buyer-waves-dark.png", "note": "The dark chart."}]}]}]}

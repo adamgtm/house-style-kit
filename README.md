@@ -44,8 +44,14 @@ python3 scripts/build_gallery.py --manifest examples/role-models/manifest.json -
 - When you love something, say "make this a role model."
 - About once a month, paste [the contradiction audit](prompts/contradiction-audit.md). Rules drift apart over time.
 - Before anyone sees a page, measure it on a phone: `python3 house-style/check_page.py page.html`. It needs [Playwright](scripts/check_page.py), a one-time install.
-- When one kind of work keeps showing up in your lessons, give it [a standard](prompts/write-a-standard.md).
-- When you make something every week, [turn it into a builder](prompts/make-a-builder.md). When you need many at once, [run a batch](prompts/batch-in-the-house-style.md). When something needs a real redesign, [do it in rounds](prompts/redesign-in-rounds.md).
+- When one kind of work keeps showing up in your lessons, give it [a standard](prompts/write-a-standard.md). When a lesson can be measured, [turn it into a check](prompts/turn-lessons-into-checks.md).
+- When you make something every week, [turn it into a builder](prompts/make-a-builder.md). When you need many at once, [run a batch](prompts/batch-in-the-house-style.md). When a graphic needs a person, [generate one](prompts/generate-people.md). When something needs a real redesign, [do it in rounds](prompts/redesign-in-rounds.md).
+
+## Review in rounds
+
+When a design has real choices, I don't read options in a chat window. My agent builds a review board: one page with a stack of versions for each decision. I click through them with the keyboard, like what I like, leave a note on each, and click Send. The notes go straight back to my agent, which saves them as lessons. Try the demo: `python3 review-board/scripts/build_review_board.py examples/review/review.json --open`. [How it works](review-board/README.md).
+
+![A review board with three stacks of versions](diagrams/review-board.png)
 
 ## What I learned building mine
 
@@ -74,9 +80,10 @@ Start from 3 to 5 outside pieces you admire, and write down why. The kit marks t
 | `templates/router.md` | The lines for your `CLAUDE.md` or `AGENTS.md` |
 | `scripts/build_gallery.py` | Builds your gallery page, plus a graphic of it for posts (`--sheet`) |
 | `scripts/check_page.py` | Measures a page at phone, tablet and laptop widths: what runs off the screen, and text that's too small |
-| `prompts/` | Prompts to paste: the monthly contradiction audit, adding role models from past work, writing a standard, making a builder, running a batch and redesigning in rounds |
-| `examples/` | A small working gallery, to show the format |
-| `diagrams/` | The two pictures above, light and dark |
+| `review-board/` | The review board: scripts and page for picking and commenting on versions in rounds |
+| `prompts/` | Prompts to paste: the monthly contradiction audit, adding role models from past work, writing a standard, making a builder, running a batch, generating people, turning lessons into checks and redesigning in rounds |
+| `examples/` | A small working gallery and a demo review board, to show the format |
+| `diagrams/` | The pictures above, light and dark, plus a review board screenshot |
 
 ## Thanks
 

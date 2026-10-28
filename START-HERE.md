@@ -21,7 +21,7 @@ When you finish, their project has:
 ## Step 0: set up
 
 1. Confirm you can read and write files in this folder. If you can't (for example, a chat window without local file access), say so plainly: this needs Claude Code or Codex working locally.
-2. Copy `house-style-kit/templates/house-style/` to `./house-style/` (skip any file that already exists), copy `house-style-kit/scripts/build_gallery.py` and `house-style-kit/scripts/check_page.py` into `./house-style/`, and copy `house-style-kit/prompts/` to `./house-style/prompts/` so the prompts survive if they delete the kit.
+2. Copy `house-style-kit/templates/house-style/` to `./house-style/` (skip any file that already exists), copy `house-style-kit/scripts/build_gallery.py` and `house-style-kit/scripts/check_page.py` into `./house-style/`, copy `house-style-kit/review-board/` to `./house-style/review-board/`, and copy `house-style-kit/prompts/` to `./house-style/prompts/` so the prompts survive if they delete the kit.
 3. Check `python3 --version` works. The gallery page needs nothing else. Two extras are optional, so offer them and don't require them: a post graphic of the gallery needs Pillow (`pip install pillow`), and the phone check (`check_page.py`) needs Playwright (`pip install playwright`, then `python3 -m playwright install chromium`).
 4. Optional: show them the example gallery so they see where this is going: `python3 house-style/build_gallery.py --manifest house-style-kit/examples/role-models/manifest.json --open`. Say plainly that the examples are Adam's, to show the format, not a style to copy.
 
@@ -103,5 +103,5 @@ Tell them, briefly:
 - When they edit what you made, the lesson gets saved in their words. When a lesson keeps coming back, it becomes a rule in the index.
 - When they love something, say "make this a role model."
 - Once a month, paste `house-style/prompts/contradiction-audit.md` to catch rules that drifted apart.
-- Later, when they need them, more prompts wait in `house-style/prompts/`: write a standard when one kind of work keeps showing up in the lessons, make a builder for something they make every week, run a batch when they need many at once, and redesign in rounds.
+- Later, when they need them, more prompts wait in `house-style/prompts/`: write a standard when one kind of work keeps showing up in the lessons, make a builder for something they make every week, run a batch when they need many at once, generate people for graphics, turn a lesson into a check, and redesign in rounds. Rounds run on a review board: they pick and comment on one page, click Send, and you save the notes as lessons.
 - `house-style/` is self-contained, prompts and scripts included. They can delete `house-style-kit/` whenever they like.
